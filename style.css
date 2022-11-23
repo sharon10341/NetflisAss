@@ -136,6 +136,6 @@ section div.texts p{
     top: 62px;
     left: 52px;
 }
-section :nth-child(even)) div.texts {
+section :nth-child(even) div.texts {
 order: 2;
 }
