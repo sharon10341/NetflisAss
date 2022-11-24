@@ -73,18 +73,18 @@ div.splash p{
     font-size: 1.2rem;
     margin-top: 15px;
 }
-div.splash form{
+div.cta form{
     position: relative;
     display: grid;
     margin-top: 20px;
     grid-template-columns: 1fr max-content;
 }
-div.splash input {
+div.cta input {
     padding: 15px 10px;
     font-size: 1.2rem;
     width:  100%;
 }
-div.splash input~span {
+div.cta input~span {
     position: absolute;
     left: 12px;
     top: 19px;
@@ -94,15 +94,15 @@ div.splash input~span {
     pointer-events: none;
 
 }
-div.splash input:focus {
+div.cta input:focus {
     padding-top: 19px;
     padding-bottom: 11px;
 }
-div.splash input:focus~span{
+div.cta input:focus~span{
     top: 4px;
     font-size: .8rem;
 }
-div.splash button{
+div.cta button{
     font-size: 1.625rem;
     padding: 12px  26px;
     background-color: #e50914;
@@ -116,6 +116,7 @@ section{
     gap: 85px;
     padding: 70px 35px;
     align-items: center;
+    border-top: 8px solid #222;
 }
 section div.texts h1{
     font-size: 3.125rem;
@@ -138,4 +139,81 @@ section div.texts p{
 }
 section :nth-child(even) div.texts {
 order: 2;
+}
+
+section div.download{
+    border: 2px solid #666;
+    border-radius: 7px;
+    padding: 10px;
+    height: 95px;
+    display: grid ;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+    width: 350px;
+    left: 50%;
+    margin-left: -175px;
+    background-color: #000000;
+    gap: 15px;
+    grid-template-columns: max-content 1fr max-content;
+}
+
+section div.download img{
+    height: 75px;
+    width: auto;
+}
+section.last{
+    border-bottom: 8px solid #222;
+}
+div.faq{
+    padding: 70px 30px;
+}
+div.faq h1{
+    font-size: 3.125rem;
+    text-align: center;
+    margin-bottom: 40px;
+  
+}
+div.questions{
+    max-width: 635px;
+    margin: 0 auto;
+    font-size: 1.625;
+}
+div.question{
+    position: relative;
+    background-color: #303030;
+    margin-bottom: 10px;
+}
+div.question svg {
+    width: 30px;
+    height: 30px;
+    right: 30px;
+    top: 20px;
+    position: absolute;
+}
+div.question .header{
+    display: block;
+    padding: 20px 30px;
+    border-bottom: 1px solid #000;
+    cursor: pointer;
+}
+div.question div.answer{
+    padding: 0 30px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.2s ease;
+}
+div.question input[type="checkbox"]{
+    display: none;
+}
+div.question input[type="checkbox"]:checked ~ div.answer{
+    padding: 30px 30px;
+    max-height: 600px;
+
+}
+div.faq h3{
+    font-weight: normal;
+    text-align: center;
+    margin: 40px 0 20px;
 }
